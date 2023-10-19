@@ -1,3 +1,8 @@
+/* Add a CSS class for elements with animations */
+.animation-element {
+  will-change: transform;
+}
+
 .App {
   text-align: center;
 }
@@ -5,11 +10,21 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -28,11 +43,88 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border-color: #4b5563;
+  width: 200%;
+}
+
+.carousel-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 80%;
+  border-radius: 5%;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1),
+    0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.carousel-card > img {
+  height: 10%;
+  width: 10%;
+  border-radius: 50%; /* "full" is not a valid value; use 50% for a circle */
+}
+
+.carousel-track {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 40px;
+  width: 200%;
+  height: 100%;
+  animation: slide 15s linear infinite;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    border-color: #4b5563;
+    width: 400%;
+  }
+  .carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    gap: 40px;
+    width: 400%;
+    height: 100%;
+    animation: slide 15s linear infinite;
+  }
+  .carousel-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 80%;
+    border-radius: 5%;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1),
+      0 8px 12px rgba(0, 0, 0, 0.5);
+    padding: 10px;
   }
 }
