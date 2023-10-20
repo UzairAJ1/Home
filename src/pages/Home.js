@@ -203,7 +203,7 @@ const Home = () => {
           autoPlay
           muted
           loop
-          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover md:flex hidden "
+          className="absolute top-0 left-0 w-full h-screen z-0 object-cover md:flex hidden "
         >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
