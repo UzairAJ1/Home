@@ -527,7 +527,7 @@ const Home = () => {
       ></div> */}
       <div
         ref={section2Ref}
-        className="w-full md:h-[900px] h-[700px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A]"
+        className="w-full  h-[900px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A]"
       >
         <h1 className="md:text-[44px] text-2xl w-[70%] font-lato  text-center leading-[3rem] ">
           The (Almost) 5 Star Real Estate Company
