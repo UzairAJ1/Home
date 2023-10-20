@@ -514,7 +514,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div
+      {/* <div
         className="md:hidden flex"
         style={{
           width: "100%",
@@ -524,7 +524,7 @@ const Home = () => {
           zIndex: 999,
           // margin
         }}
-      ></div>
+      ></div> */}
       <div
         ref={section2Ref}
         className="w-full md:h-[900px] h-[700px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A]"
