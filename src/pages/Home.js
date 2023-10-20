@@ -149,7 +149,7 @@ const Home = () => {
                   }),
                   "@media (max-width: 640px)": {
                     input: {
-                      width: "200px", // Change width to 200px for mobile screens
+                      width: "200px",
                     },
                   },
                 },
