@@ -330,12 +330,12 @@ const Home = () => {
           className="absolute top-20 left-0 w-full h-full z-0 object-cover object-center"
         /> */}
 
-        <div className="w-full h-full flex flex-col z-10 border-4 border-black">
+        <div className="w-full h-full flex flex-col z-10">
           <video
             autoPlay
             muted
             loop
-            className="absolute left-0 w-full z-0 md:flex hidden border-4 border-red-500"
+            className="absolute left-0 w-full h-[700px] object-cover z-0 md:flex hidden"
           >
             <source src={videoBackground} type="video/mp4" />
             Your browser does not support the video tag.
@@ -369,7 +369,7 @@ const Home = () => {
             </svg>
           </div>
 
-          <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto h-[1500px] md:h-[1200px] mt-12 border-8 border-blue-500">
+          <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto h-[1500px] md:h-[610px] mt-12 ">
             <div className="md:text-[55px] text-[30px] md:w-[70%] w-[85%] font-merriweather text-center">
               America’s most loved
               <br></br> Real estate company
