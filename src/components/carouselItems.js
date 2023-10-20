@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CarouselItem({ imgUrl, imgTitle }) {
+export default function CarouselItem({ imgUrl, imgTitle,text }) {
   return (
     <div className="carousel-card md:text-lg text-md overflow-hidden py-2">
       <div className=" flex w-full items-center gap-8">
@@ -12,11 +12,8 @@ export default function CarouselItem({ imgUrl, imgTitle }) {
         <h1>{imgTitle}</h1>
       </div>
 
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+      <h1 className="mt-6">
+        {text}
       </h1>
     </div>
   );
