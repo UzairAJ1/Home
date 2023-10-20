@@ -191,7 +191,7 @@ const Home = () => {
     <div className="w-full text-[#4A4A4A] bg-[#F7F7F7F7]">
       <div
         ref={section1Ref}
-        className="w-full lg:h-[600px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
+        className="w-full lg:h-[600px] md:h-[1000px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
         // style={divStyle}
       >
         {/* <img
@@ -203,13 +203,13 @@ const Home = () => {
           autoPlay
           muted
           loop
-          className="absolute -top-6 left-0 w-full h-screen z-0 object-cover md:flex hidden "
+          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover md:flex hidden "
         >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <div className="relative z-0 ">
+        <div className="relative z-0 mt-2">
           <svg
             width="146"
             height="34"
@@ -238,12 +238,12 @@ const Home = () => {
           </svg>
         </div>
 
-        <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto relative top- h-[1300px]">
+        <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto relative top- h-[1300px] md:h-[700px] mt-12">
           <div className="md:text-[55px] text-[30px] md:w-[70%] w-[85%] font-merriweather text-center">
             America’s most loved 
           <br></br>  Real estate company
           </div>
-          <div className="text-[20px] mb-12 mt-4 md:px-0 px-6 text-center ">
+          <div className="text-[18px] mb-12 mt-4 md:px-0 px-6 text-center font-lato">
             Instant Offer. Incredible Service. Big Heart
           </div>
           <div class="flex items-center justify-center md:w-[40%] w-[75%] h-28 md:p-8 p-4 bg-[#F9F9F6] rounded-xl z-20">
@@ -274,21 +274,27 @@ const Home = () => {
             alt="asd"
             className="z-0 object-cover md:hidden flex mt-12"
           />
-          {inputError === "" && mapImage ? (
+          {/* {inputError === "" && mapImage ? (
             <img src={mapImage} className="w-[300px] h-[200px] z-10 mt-12" />
           ) : (
             <div className="w-[300px] h-[200px] z-10 mt-12"></div>
-          )}
+          )} */}
+           <button
+          onClick={scrollToFirstSection}
+          className="w-[200px] h-12 bg-red-500 text-white rounded-md mt-4"
+        >
+          Get Offer
+        </button>
         </div>
       </div>
       <img
         src="sponsors.png"
         alt=" "
-        className=" md:mt-32  object-contain md:flex hidden"
+        className=" md:mt-24  object-contain lg:flex hidden"
       />
       <div
         ref={section2Ref}
-        className="w-full h-[900px]  flex flex-col items-center justify-center gap-8 bg-[#F7F7F7F7] text-[#4A4A4A] "
+        className="w-full lg:h-[900px] md:h-[1200px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A] "
       >
         <h1 className="md:text-[44px] text-2xl w-[70%] font-lato  text-center leading-[3rem] ">
           The (Almost) 5 Star Real Estate Company

@@ -59,8 +59,7 @@
   height: 80%;
   border-radius: 5%;
   background: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1),
-    0 8px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 12px -5px rgba(0, 0, 0, 0.5);
   padding: 10px;
 }
 
@@ -111,7 +110,7 @@
     align-items: center;
     height: 80px;
     gap: 40px;
-    width: 600%;
+    width: 400%;
     height: 100%;
     animation: slide 60s linear infinite;
   }
@@ -123,8 +122,8 @@
     height: 80%;
     border-radius: 5%;
     background: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1),
-      0 8px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05), -2px -2px 5px rgba(0, 0, 0, 0.05),
+    0 8px 12px rgba(0, 0, 0, 0.2);
     padding: 10px;
   }
 }
