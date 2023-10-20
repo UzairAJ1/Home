@@ -137,7 +137,7 @@ const Home = () => {
           <div className="text-[20px] mb-12 md:px-0 px-6 text-center">
             Instant Offer. Incredible Service. Big Heart
           </div>
-          <div class="flex items-center justify-center md:w-[40%] w-[75%] h-24 md:p-8 p-4 bg-red-500 rounded-lg overflow-hidden">
+          <div class="flex items-center justify-center md:w-[40%] w-[75%] h-24 md:p-8 p-4 bg-red-500 rounded-lg z-20">
             <GooglePlacesAutocomplete
               selectProps={{
                 value: places,
