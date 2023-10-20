@@ -123,13 +123,13 @@ const Home = () => {
           autoPlay
           muted
           loop
-          className="absolute top-0 left-0 w-full h-screen z-0 object-cover"
+          className="absolute top-0 left-0 w-full h-screen z-0 object-cover md:flex hidden"
         >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <img src="Vector.png" alt="" className="relative z-0" />
+        <img src="Vector.png" alt="" className="relative z-0 md:flex hidden" />
         <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto relative top-16">
           <div className="md:text-[55px] text-[30px] md:w-[70%] w-[85%] font-merriweather text-center">
             Forget Everything You Know About Selling Your House
