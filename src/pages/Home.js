@@ -191,7 +191,7 @@ const Home = () => {
     <div className="w-full text-[#4A4A4A] bg-[#F7F7F7F7] flex flex-col items-center justify-center">
       <div
         ref={section1Ref}
-        className="w-full lg:h-[600px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4"
+        className="w-full lg:h-screen h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 border-4 border-black"
         // style={divStyle}
       >
         {/* <img
@@ -203,12 +203,12 @@ const Home = () => {
           autoPlay
           muted
           loop
-          className="absolute top-12 left-0 w-full h-[600px] z-0 object-cover md:flex hidden "
+          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover md:flex hidden "
         >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-<div className="w-full h-full flex flex-col z-20">
+<div className="w-full h-full flex flex-col z-20 mb-12">
 <div className="relative z-0 mt-2 flex items-center justify-center">
 <svg
             width="146"
@@ -285,17 +285,19 @@ const Home = () => {
         >
           Get Offer
         </button>
-        </div>
-</div>
-   
-
      
-      </div>
-      <img
+        </div>
+        <img
         src="sponsors.png"
         alt=" "
         className="  object-contain lg:flex hidden"
       />
+</div>
+   
+
+
+      </div>
+  
       <div
         ref={section2Ref}
         className="w-full h-[900px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A] "
