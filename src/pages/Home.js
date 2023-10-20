@@ -419,10 +419,8 @@ const Home = () => {
               muted
               loop
               className="left-0 w-full object-cover z-0 md:flex hidden"
-            >
-              <source src={videoBackground} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              src={videoBackground}
+            />
             <video
               autoPlay
               muted
