@@ -255,6 +255,13 @@ const Home = () => {
   //     setIsValid(true);
   //   }
   // };
+  const getOffer = () => {
+    if (places) {
+      setPopup(!popup);
+    } else {
+      alert("Please Enter Your Location");
+    }
+  };
   return (
     <div className="w-full h-full text-[#4A4A4A] bg-[#F7F7F7F7] flex flex-col items-center justify-center">
       {popup && (
@@ -318,7 +325,7 @@ const Home = () => {
               </div>
             )}
             {form === 1 && (
-              <div className="md:w-[60%] w-[90%] h-full border-2 flex flex-col items-center justify-center px-4 rounded-md">
+              <div className="md:w-[60%] w-[90%] h-full border-2 flex flex-col items-center justify-center md:px-4 px-8 rounded-md">
                 <input
                   className="w-full h-12 border-b border-black"
                   placeholder="Name"
@@ -495,9 +502,7 @@ const Home = () => {
             <div className="w-[300px] h-[200px] z-10 mt-12"></div>
           )} */}
               <button
-                onClick={() => {
-                  setPopup(!popup);
-                }}
+                onClick={getOffer}
                 className="w-[200px] h-12 bg-red-500 text-white rounded-md mt-4"
               >
                 Get Offer
