@@ -13,105 +13,110 @@ const Home = () => {
   const [inputError, setInputError] = useState();
   const cardDetails = {
     0: {
-      imgUrl: "https://picsum.photos/id/237/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "James O'Connell",
       text: "Bidnovation gave an instant offer on my home! The process was seamless and stress-free.",
     },
-
     1: {
-      imgUrl: "https://picsum.photos/id/238/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Maria Gonzales",
       text: "I've never experienced such impeccable service. Bidnovation truly cares for their customers!",
     },
-
     2: {
-      imgUrl: "https://picsum.photos/id/239/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Harpreet Singh",
       text: "Sold my property to Bidnovation and it was easier than selling on the open market! Kudos!",
     },
-
     3: {
-      imgUrl: "https://picsum.photos/id/240/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1464863979621-258859e62245?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Linda Ferrell",
       text: "With Bidnovation, I got cash fast for my home. No lengthy procedures or delays.",
     },
-
     4: {
-      imgUrl: "https://picsum.photos/id/241/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Tasha Kim ",
       text: "Bidnovation's big heart shines through. They went above and beyond to ensure we were happy.",
     },
-
     5: {
-      imgUrl: "https://picsum.photos/id/42/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Kwame Nkrumah",
       text: "It's rare to find a company that combines promptness with genuine care. Bidnovation nails it!",
     },
-
     6: {
-      imgUrl: "https://picsum.photos/id/243/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Mikhail Ivanov",
       text: "Received a quick offer from Bidnovation. Their incredible service left me speechless",
     },
     7: {
-      imgUrl: "https://picsum.photos/id/241/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Rebecca Walters",
       text: "Bidnovation's team was understanding and supportive throughout. Truly a standout experience!",
     },
-
     8: {
-      imgUrl: "https://picsum.photos/id/42/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Chen Wei",
       text: "The team at Bidnovation has a big heart. Selling my house was surprisingly pleasant!",
     },
-
     9: {
-      imgUrl: "https://picsum.photos/id/243/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1507101105822-7472b28e22ac?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Carla Rodriguez",
       text: "Selling to Bidnovation was a breeze! Instant offers and unmatched service, highly recommend.",
     },
     10: {
-      imgUrl: "https://picsum.photos/id/241/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Derek Hamilton",
       text: "I was initially skeptical, but Bidnovation's swift offer turned me into a believer. The team was professional and compassionate.",
     },
-
     11: {
-      imgUrl: "https://picsum.photos/id/42/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Nina Patel",
       text: "Bidnovation stands out! Their instant offer was a lifesaver, and their warm service made all the difference.",
     },
-
     12: {
-      imgUrl: "https://picsum.photos/id/243/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1576695444267-40cdd214f06e?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Alejandro Reyes",
       text: "SSelling my home used to be a daunting thought. Bidnovation changed that with their quick, caring approach.",
     },
     13: {
-      imgUrl: "https://picsum.photos/id/241/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Samantha Clark",
       text: "I'm in awe of Bidnovation's efficiency. Their offer came fast, and their kindness was palpable throughout.",
     },
-
     14: {
-      imgUrl: "https://picsum.photos/id/42/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Hassan El-Amin",
       text: "From offer to closure, Bidnovation was phenomenal. A mix of incredible service with a genuinely big heart.",
     },
-
     15: {
-      imgUrl: "https://picsum.photos/id/243/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1528892952291-009c663ce843?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Evelyn O'Sullivan",
       text: "Bidnovation turned a typically tedious process into a breeze. Their prompt offers and genuine care are commendable.",
     },
     16: {
-      imgUrl: "https://picsum.photos/id/42/200/300",
+      imgUrl:
+        "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?auto=format&fit=cr[…].3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Rajeev Kumar",
       text: "Never imagined selling a property could be this easy. Thanks to Bidnovation's team for their wonderful service.",
     },
-
     17: {
-      imgUrl: "https://picsum.photos/id/243/200/300",
+      imgUrl:
+        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&q=80[…]3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Giselle Thompson",
       text: "Bidnovation shines in both speed and humanity. They offered quickly and treated me like family.",
     },
@@ -202,27 +207,94 @@ const Home = () => {
     };
   }, []);
   console.log("places", places);
-  const [timeToCall, setTimeToCall] = useState("");
   const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [availability, setAvailability] = useState("Availability");
+  const [timeToCall, setTimeToCall] = useState("Best Time To Call");
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    const formattedPhoneNumber = phoneNumber.replace(/[^0-9+]/g, "");
+
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    const isPhoneNumberValid = formattedPhoneNumber.length === 11;
+    setIsValid(
+      name !== "" &&
+        formattedPhoneNumber !== "" &&
+        isEmailValid &&
+        availability !== "Availability" &&
+        timeToCall !== "Best Time To Call"
+    );
+  }, [name, phoneNumber, email, availability, timeToCall]);
+
+  const handleSubmit = () => {
+    setPopup(!popup);
+    setForm(0);
+  };
+  const handleSubmitForm2 = () => {
+    if (isValid) {
+      setForm(2);
+    } else {
+      alert("please fill all details or Input the Correct Format");
+    }
+  };
+  console.log("validity:", isValid);
+  // const handleInputChange = () => {
+  //   // Check if any of the input fields are empty
+  //   if (
+  //     name.trim() === "" ||
+  //     phoneNumber.trim() === "" ||
+  //     email.trim() === "" ||
+  //     availability === "Availability" ||
+  //     timeToCall === "Best Time To Call"
+  //   ) {
+  //     setIsValid(false);
+  //   } else {
+  //     setIsValid(true);
+  //   }
+  // };
   return (
     <div className="w-full h-full text-[#4A4A4A] bg-[#F7F7F7F7] flex flex-col items-center justify-center">
       {popup && (
         <div
           className={`${
             form
-              ? "w-[60%] h-[90%] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-[#F9F9F6] border-4 border-black"
-              : "w-[60%] h-[60%] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-[#F9F9F6] border-4 border-black"
+              ? "md:w-[60%] w-[90%] md:h-[90%] h-[100%] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-[#F9F9F6] border-2 rounded-md"
+              : "md:w-[60%] w-[90%] h-[60%] bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-[#F9F9F6] border-2 rounded-md"
           }`}
         >
           <div className="w-full h-full flex flex-col items-center justify-center gap-4 py-4 pb-8">
+            <button
+              className="absolute right-4 top-4"
+              onClick={() => {
+                setPopup(false);
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </button>
             {showCircle ? (
               <div className="loader"></div>
             ) : (
               <div
                 className={`${
                   form
-                    ? "w-full h-1/3 flex flex-col items-center justify-center gap-2"
-                    : "w-full h-full flex flex-col items-center justify-center gap-4"
+                    ? "w-full h-1/3 flex flex-col items-center justify-center gap-2 py-8 text-center"
+                    : "w-full h-full flex flex-col items-center justify-center gap-4 py-8 text-center"
                 }`}
               >
                 <h1 className="text-2xl font-bold">Congratutations!</h1>
@@ -240,11 +312,13 @@ const Home = () => {
                 >
                   Any Questions
                 </button>
-                <h1>We are happy to share more details</h1>
+                <h1 className="md:flex hidden">
+                  We are happy to share more details
+                </h1>
               </div>
             )}
             {form === 1 && (
-              <div className="w-[60%] h-full border-2 flex flex-col items-center justify-center px-4 rounded-md">
+              <div className="md:w-[60%] w-[90%] h-full border-2 flex flex-col items-center justify-center px-4 rounded-md">
                 <input
                   className="w-full h-12 border-b border-black"
                   placeholder="Name"
@@ -255,25 +329,33 @@ const Home = () => {
                 <input
                   className="w-full h-12 border-b border-black"
                   placeholder="Phone Number"
+                  onChange={(e) => {
+                    setPhoneNumber(e.target.value);
+                  }}
                 ></input>
                 <input
                   className="w-full h-12 border-b border-black"
                   placeholder="Email"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 ></input>
 
                 <select
                   id="mySelect"
                   // value={}
-                  onChange={(e) => {
-                    setTimeToCall(e.target.value);
-                  }}
+
                   className="w-full h-12 border-b border-black"
                   placeholder="Availability"
+                  value={availability}
+                  onChange={(e) => {
+                    setAvailability(e.target.value);
+                  }}
                 >
                   <option value="Availability">Availability</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                  <option value="option4">Option 4</option>
+                  <option value="option2">Monday</option>
+                  <option value="option3">Tuesday</option>
+                  <option value="option4">Wednesday</option>
                 </select>
                 <select
                   id="mySelect"
@@ -281,16 +363,18 @@ const Home = () => {
                   // onChange={}
                   className="w-full h-12 border-b border-black"
                   placeholder="Best Time To Call"
+                  value={timeToCall}
+                  onChange={(e) => {
+                    setTimeToCall(e.target.value);
+                  }}
                 >
                   <option value="Best Time To Call">Best Time To Call</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                  <option value="option4">Option 4</option>
+                  <option value="8am - 12pm">8am - 12pm</option>
+                  <option value="12pm - 4am">12pm - 4am</option>
+                  <option value="4am - 8pm">4am - 8pm</option>
                 </select>
                 <button
-                  onClick={() => {
-                    setForm(2);
-                  }}
+                  onClick={handleSubmitForm2}
                   className="w-[200px] h-12 bg-red-500 text-white rounded-md mt-4"
                 >
                   Submit
@@ -298,7 +382,7 @@ const Home = () => {
               </div>
             )}
             {form === 2 && (
-              <div className="w-[50%] h-full border-2 flex flex-col items-center justify-center px-4 rounded-md">
+              <div className="md:w-[50%] w-[90%] h-full border-2 flex flex-col items-center justify-center px-4 rounded-md px-6 text-center gap-4">
                 <h1 className="text-2xl font-bold">
                   {name}, We will call you soon
                 </h1>
@@ -307,9 +391,7 @@ const Home = () => {
                 </h1>
                 <h1>We Look Forward to Speaking with you</h1>
                 <button
-                  onClick={() => {
-                    setPopup(!popup);
-                  }}
+                  onClick={handleSubmit}
                   className="w-[200px] h-12 bg-red-500 text-white rounded-md mt-4"
                 >
                   Thanks
@@ -321,7 +403,7 @@ const Home = () => {
       )}
       <div
         ref={section1Ref}
-        className="w-full lg:h-screen h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
+        className="w-full lg:h-screen h-[600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4"
         // style={divStyle}
       >
         {/* <img
@@ -336,12 +418,21 @@ const Home = () => {
               autoPlay
               muted
               loop
-              className="left-0 w-full object-cover z-0 md:flex hidden border-8 border-red-500"
+              className="left-0 w-full object-cover z-0 md:flex hidden"
             >
               <source src={videoBackground} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="absolute top-0 left-0 flex flex-col items-center md:gap-0 gap-4 z-20 h-[1500px] md:h-[610px]  w-full">
+            <video
+              autoPlay
+              muted
+              loop
+              src={mobileBg}
+              alt="asd"
+              className="z-0 object-cover md:hidden flex absolute -top-4 left-0 border-b border-gray-100"
+            />
+
+            <div className="absolute top-0 left-0 flex flex-col items-center md:gap-0 md:gap-4 gap-2 z-20 md:h-[610px]  w-full">
               <div className=" z-0 mt-2 flex items-center justify-center w-full h-[90px]">
                 <svg
                   width="146"
@@ -370,6 +461,7 @@ const Home = () => {
                   </defs>
                 </svg>
               </div>
+
               <div className="md:text-[55px] text-[30px] md:w-[100%] w-[85%] font-merriweather text-center">
                 America’s most loved
                 <br></br> Real estate company
@@ -380,6 +472,7 @@ const Home = () => {
               <div class="flex items-center justify-center md:w-[40%] w-[75%] h-28 md:p-8 p-4 bg-[#F9F9F6] rounded-xl z-20">
                 <GooglePlacesAutocomplete
                   selectProps={{
+                    placeholder: "Enter Location",
                     value: places,
                     onChange: handleInputChange,
                     styles: {
@@ -397,14 +490,7 @@ const Home = () => {
                   apiKey="AIzaSyDMXt_1dXYpRMuQJ16_TcsYgK6xqX1QVZc"
                 />
               </div>
-              <video
-                autoPlay
-                muted
-                loop
-                src={mobileBg}
-                alt="asd"
-                className="z-0 object-cover md:hidden flex mt-12"
-              />
+
               {/* {inputError === "" && mapImage ? (
             <img src={mapImage} className="w-[300px] h-[200px] z-10 mt-12" />
           ) : (
@@ -424,14 +510,24 @@ const Home = () => {
           <img
             src="sponsors.png"
             alt=" "
-            className="  object-contain lg:flex md:flex hidden"
+            className="  object-contain lg:flex md:flex hidden md:h-auto h-0"
           />
         </div>
       </div>
-
+      <div
+        className="md:hidden flex"
+        style={{
+          width: "100%",
+          height: 10,
+          background: "#F7F7F7F7",
+          marginTop: -4,
+          zIndex: 999,
+          // margin
+        }}
+      ></div>
       <div
         ref={section2Ref}
-        className="w-full h-[900px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A] "
+        className="w-full md:h-[900px] h-[700px]  flex flex-col items-center justify-center lg:gap-8 md:gap-12 bg-[#F7F7F7F7] text-[#4A4A4A]"
       >
         <h1 className="md:text-[44px] text-2xl w-[70%] font-lato  text-center leading-[3rem] ">
           The (Almost) 5 Star Real Estate Company
