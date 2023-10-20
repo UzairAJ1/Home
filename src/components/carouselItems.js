@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CarouselItem({ imgUrl, imgTitle }) {
   return (
-    <div className="carousel-card md:text-lg text-md ">
+    <div className="carousel-card md:text-lg text-md overflow-hidden py-2">
       <div className=" flex w-full items-center gap-8">
         <img
           src={imgUrl}

@@ -87,7 +87,7 @@ const Home = () => {
   useEffect(() => {
     // Function to update the state when the screen is resized
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 640);
+      setIsSmallScreen(window.innerWidth < 992);
     };
 
     // Add an event listener for window resize
@@ -111,7 +111,7 @@ const Home = () => {
     <div className="w-full text-[#4A4A4A] bg-[#F7F7F7F7]">
       <div
         ref={section1Ref}
-        className="w-full md:h-[600px] h-[900px] flex flex-col items-center justify-center  font-sans  bg-no-repeat bg-contain gap-4 "
+        className="w-full lg:h-[600px] h-[1000px] flex flex-col items-center justify-center  font-sans  bg-no-repeat bg-contain gap-4 "
         // style={divStyle}
       >
         {/* <img
@@ -130,14 +130,14 @@ const Home = () => {
         </video>
 
         <img src="Vector.png" alt="" className="relative z-0" />
-        <div className="flex flex-col items-center z-20 container mx-auto relative top-16">
-          <div className="md:text-[55px] text-[30px] w-[70%] font-merriweather">
+        <div className="flex flex-col items-center md:gap-0 gap-4 z-20 container mx-auto relative top-16">
+          <div className="md:text-[55px] text-[30px] md:w-[70%] w-[85%] font-merriweather text-center">
             Forget Everything You Know About Selling Your House
           </div>
-          <div className="text-[20px] mb-12">
+          <div className="text-[20px] mb-12 md:px-0 px-6 text-center">
             Instant Offer. Incredible Service. Big Heart
           </div>
-          <div class="flex items-center justify-center md:w-[40%] w-[75%] h-24 md:p-8 bg-red-500 rounded-lg">
+          <div class="flex items-center justify-center md:w-[40%] w-[75%] h-24 md:p-8 p-4 bg-red-500 rounded-lg overflow-hidden">
             <GooglePlacesAutocomplete
               selectProps={{
                 value: places,

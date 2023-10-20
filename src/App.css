@@ -80,7 +80,7 @@
   gap: 40px;
   width: 200%;
   height: 100%;
-  animation: slide 15s linear infinite;
+  animation: slide 60s linear infinite;
 }
 .carousel-track:hover {
   animation-play-state: paused;
@@ -113,7 +113,7 @@
     gap: 40px;
     width: 400%;
     height: 100%;
-    animation: slide 15s linear infinite;
+    animation: slide 60s linear infinite;
   }
   .carousel-card {
     display: flex;
