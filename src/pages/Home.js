@@ -191,7 +191,7 @@ const Home = () => {
     <div className="w-full text-[#4A4A4A] bg-[#F7F7F7F7]">
       <div
         ref={section1Ref}
-        className="w-full lg:h-[600px] md:h-[1000px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
+        className="w-full lg:h-[1200px] md:h-[1000px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
         // style={divStyle}
       >
         {/* <img
@@ -203,7 +203,7 @@ const Home = () => {
           autoPlay
           muted
           loop
-          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover md:flex hidden "
+          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover lg:flex  hidden "
         >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
@@ -244,7 +244,7 @@ const Home = () => {
           <br></br>  Real estate company
           </div>
           <div className="text-[18px] mb-12 mt-4 md:px-0 px-6 text-center font-lato">
-            Instant Offer. Incredible Service. Big Heart
+            Instant Offer. Incredible Service. Big Heart.
           </div>
           <div class="flex items-center justify-center md:w-[40%] w-[75%] h-28 md:p-8 p-4 bg-[#F9F9F6] rounded-xl z-20">
             <GooglePlacesAutocomplete
@@ -280,11 +280,11 @@ const Home = () => {
             <div className="w-[300px] h-[200px] z-10 mt-12"></div>
           )} */}
            <button
-          onClick={scrollToFirstSection}
           className="w-[200px] h-12 bg-red-500 text-white rounded-md mt-4"
         >
           Get Offer
         </button>
+        <div></div>
         </div>
       </div>
       <img
