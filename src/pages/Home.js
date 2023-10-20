@@ -191,7 +191,7 @@ const Home = () => {
     <div className="w-full text-[#4A4A4A] bg-[#F7F7F7F7]">
       <div
         ref={section1Ref}
-        className="w-full lg:h-[1200px] md:h-[1000px] h-[1600px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
+        className="w-full lg:h-[600px]  h-[1000px] flex flex-col items-center justify-center  font-lato  bg-no-repeat bg-contain gap-4 "
         // style={divStyle}
       >
         {/* <img
@@ -284,7 +284,6 @@ const Home = () => {
         >
           Get Offer
         </button>
-        <div></div>
         </div>
       </div>
       <img
