@@ -329,16 +329,17 @@ const Home = () => {
           alt="Section-min"
           className="absolute top-20 left-0 w-full h-full z-0 object-cover object-center"
         /> */}
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute -top-12 left-0 w-full h-screen z-0 object-cover md:flex hidden border-4 border-red-500"
-        >
-          <source src={videoBackground} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+
         <div className="w-full h-full flex flex-col z-10 border-4 border-black">
+          <video
+            autoPlay
+            muted
+            loop
+            className="absolute left-0 w-full h-screen z-0 object-cover md:flex hidden border-4 border-red-500"
+          >
+            <source src={videoBackground} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <div className=" z-0 mt-2 flex items-center justify-center">
             <svg
               width="146"
